@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA10F6010000000000000001 /* snappitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000001 /* snappitApp.swift */; };
+		AA10F6010000000000000002 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000002 /* Product.swift */; };
+		AA10F6010000000000000003 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000003 /* CartItem.swift */; };
+		AA10F6010000000000000004 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000004 /* Widget.swift */; };
+		AA10F6010000000000000005 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000005 /* MainTabView.swift */; };
+		AA10F6010000000000000006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000006 /* HomeView.swift */; };
+		AA10F6010000000000000007 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000007 /* CategoriesView.swift */; };
+		AA10F6010000000000000008 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000008 /* CartView.swift */; };
+		AA10F6010000000000000009 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000009 /* OrdersView.swift */; };
+		AA10F601000000000000000A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000A /* ProfileView.swift */; };
+		AA10F601000000000000000B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000B /* HomeViewModel.swift */; };
+		AA10F601000000000000000C /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000C /* CartViewModel.swift */; };
+		AA10F601000000000000000D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000D /* APIService.swift */; };
+		AA10F601000000000000000E /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000E /* ProductCardView.swift */; };
+		AA10F601000000000000000F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000000F /* Extensions.swift */; };
+		AA10F6010000000000000010 /* sample_products.json in Resources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000010 /* sample_products.json */; };
+		AA10F6010000000000000020 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000020 /* Environment.swift */; };
+		AA10F6010000000000000021 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000021 /* ServiceLocator.swift */; };
+		AA10F6010000000000000022 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000022 /* KeyValueStore.swift */; };
+		AA10F6010000000000000023 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000023 /* AppStore.swift */; };
+		AA10F6010000000000000024 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000024 /* TokenStore.swift */; };
+		AA10F6010000000000000025 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000025 /* HTTPClient.swift */; };
+		AA10F6010000000000000026 /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000026 /* AuthInterceptor.swift */; };
+		AA10F6010000000000000027 /* ConnectivityInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000027 /* ConnectivityInterceptor.swift */; };
+		AA10F6010000000000000028 /* LoggingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000028 /* LoggingMonitor.swift */; };
+		AA10F6010000000000000029 /* APIPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000029 /* APIPaths.swift */; };
+		AA10F601000000000000002A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002A /* APIError.swift */; };
+		AA10F601000000000000002B /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002B /* BaseRepository.swift */; };
+		AA10F601000000000000002C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002C /* Dependencies.swift */; };
+		AA10F601000000000000002D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002D /* AppRouter.swift */; };
+		AA10F601000000000000002E /* SendOtpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002E /* SendOtpRequest.swift */; };
+		AA10F601000000000000002F /* SendOtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000002F /* SendOtpResponse.swift */; };
+		AA10F6010000000000000030 /* VerifyOtpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000030 /* VerifyOtpRequest.swift */; };
+		AA10F6010000000000000031 /* VerifyOtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000031 /* VerifyOtpResponse.swift */; };
+		AA10F6010000000000000032 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000032 /* UserProfile.swift */; };
+		AA10F6010000000000000033 /* UserCacheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000033 /* UserCacheData.swift */; };
+		AA10F6010000000000000034 /* OnboardingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000034 /* OnboardingRepository.swift */; };
+		AA10F6010000000000000035 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000035 /* SplashView.swift */; };
+		AA10F6010000000000000036 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000036 /* SplashViewModel.swift */; };
+		AA10F6010000000000000037 /* EnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000037 /* EnterNumberView.swift */; };
+		AA10F6010000000000000038 /* EnterOtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000038 /* EnterOtpView.swift */; };
+		AA10F6010000000000000039 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F6020000000000000039 /* AuthViewModel.swift */; };
+		AA10F601000000000000003A /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000003A /* OTPFieldView.swift */; };
+		AA10F601000000000000003B /* OnboardingPermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000003B /* OnboardingPermissionViewModel.swift */; };
+		AA10F601000000000000003C /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000003C /* LocationPermissionView.swift */; };
+		AA10F601000000000000003D /* NotificationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F602000000000000003D /* NotificationPermissionView.swift */; };
+		BB10F6030000000000000001 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BB10F6020000000000000001 /* Alamofire */; };
+		BB10F6030000000000000002 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BB10F6020000000000000002 /* KeychainAccess */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF10F6952F3FAA1A003F754C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF10F67F2F3FAA19003F754C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF10F6862F3FAA19003F754C;
+			remoteInfo = snappit;
+		};
+		CF10F69F2F3FAA1A003F754C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF10F67F2F3FAA19003F754C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF10F6862F3FAA19003F754C;
+			remoteInfo = snappit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF10F6872F3FAA19003F754C /* snappit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snappit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF10F6942F3FAA1A003F754C /* snappitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snappitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF10F69E2F3FAA1A003F754C /* snappitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snappitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10F6020000000000000001 /* snappitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snappitApp.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000002 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000003 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000004 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000005 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000007 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000008 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000009 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000C /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000E /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		AA10F602000000000000000F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000010 /* sample_products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_products.json; sourceTree = "<group>"; };
+		AA10F6020000000000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA10F6020000000000000012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA10F6020000000000000020 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000021 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000022 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000023 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000024 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000025 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000026 /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000027 /* ConnectivityInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityInterceptor.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000028 /* LoggingMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingMonitor.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000029 /* APIPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPaths.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002B /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002E /* SendOtpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOtpRequest.swift; sourceTree = "<group>"; };
+		AA10F602000000000000002F /* SendOtpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOtpResponse.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000030 /* VerifyOtpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpRequest.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000031 /* VerifyOtpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpResponse.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000032 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000033 /* UserCacheData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheData.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000034 /* OnboardingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRepository.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000035 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000036 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000037 /* EnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000038 /* EnterOtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterOtpView.swift; sourceTree = "<group>"; };
+		AA10F6020000000000000039 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AA10F602000000000000003A /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
+		AA10F602000000000000003B /* OnboardingPermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPermissionViewModel.swift; sourceTree = "<group>"; };
+		AA10F602000000000000003C /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
+		AA10F602000000000000003D /* NotificationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF10F6842F3FAA19003F754C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB10F6030000000000000001 /* Alamofire in Frameworks */,
+				BB10F6030000000000000002 /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F6912F3FAA1A003F754C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F69B2F3FAA1A003F754C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF10F67E2F3FAA19003F754C = {
+			isa = PBXGroup;
+			children = (
+				AA10F6030000000000000001 /* snappit */,
+				CF10F6972F3FAA1A003F754C /* snappitTests */,
+				CF10F6A12F3FAA1A003F754C /* snappitUITests */,
+				CF10F6882F3FAA19003F754C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF10F6882F3FAA19003F754C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF10F6872F3FAA19003F754C /* snappit.app */,
+				CF10F6942F3FAA1A003F754C /* snappitTests.xctest */,
+				CF10F69E2F3FAA1A003F754C /* snappitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000001 /* snappit */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6030000000000000002 /* App */,
+				AA10F6030000000000000020 /* Core */,
+				AA10F6030000000000000023 /* Navigation */,
+				AA10F6030000000000000003 /* Models */,
+				AA10F6030000000000000004 /* Views */,
+				AA10F6030000000000000005 /* ViewModels */,
+				AA10F6030000000000000025 /* Repositories */,
+				AA10F6030000000000000006 /* Services */,
+				AA10F6030000000000000007 /* Components */,
+				AA10F6030000000000000008 /* Utilities */,
+				AA10F6030000000000000009 /* Resources */,
+				AA10F6020000000000000011 /* Assets.xcassets */,
+				AA10F603000000000000000A /* Preview Content */,
+			);
+			path = snappit;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000001 /* snappitApp.swift */,
+				AA10F602000000000000002C /* Dependencies.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000020 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000020 /* Environment.swift */,
+				AA10F6020000000000000021 /* ServiceLocator.swift */,
+				AA10F602000000000000002B /* BaseRepository.swift */,
+				AA10F6030000000000000021 /* Storage */,
+				AA10F6030000000000000022 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000021 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000022 /* KeyValueStore.swift */,
+				AA10F6020000000000000023 /* AppStore.swift */,
+				AA10F6020000000000000024 /* TokenStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000022 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000025 /* HTTPClient.swift */,
+				AA10F6020000000000000026 /* AuthInterceptor.swift */,
+				AA10F6020000000000000027 /* ConnectivityInterceptor.swift */,
+				AA10F6020000000000000028 /* LoggingMonitor.swift */,
+				AA10F6020000000000000029 /* APIPaths.swift */,
+				AA10F602000000000000002A /* APIError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000023 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000002D /* AppRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000002 /* Product.swift */,
+				AA10F6020000000000000003 /* CartItem.swift */,
+				AA10F6020000000000000004 /* Widget.swift */,
+				AA10F6030000000000000024 /* Auth */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000024 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000002E /* SendOtpRequest.swift */,
+				AA10F602000000000000002F /* SendOtpResponse.swift */,
+				AA10F6020000000000000030 /* VerifyOtpRequest.swift */,
+				AA10F6020000000000000031 /* VerifyOtpResponse.swift */,
+				AA10F6020000000000000032 /* UserProfile.swift */,
+				AA10F6020000000000000033 /* UserCacheData.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000025 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000034 /* OnboardingRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000005 /* MainTabView.swift */,
+				AA10F603000000000000000B /* Home */,
+				AA10F603000000000000000C /* Categories */,
+				AA10F603000000000000000D /* Cart */,
+				AA10F603000000000000000E /* Orders */,
+				AA10F603000000000000000F /* Profile */,
+				AA10F6030000000000000026 /* Splash */,
+				AA10F6030000000000000027 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000006 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000007 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000D /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000008 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000E /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000009 /* OrdersView.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000000A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000026 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000035 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000027 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000037 /* EnterNumberView.swift */,
+				AA10F6020000000000000038 /* EnterOtpView.swift */,
+				AA10F602000000000000003C /* LocationPermissionView.swift */,
+				AA10F602000000000000003D /* NotificationPermissionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000000B /* HomeViewModel.swift */,
+				AA10F602000000000000000C /* CartViewModel.swift */,
+				AA10F6020000000000000036 /* SplashViewModel.swift */,
+				AA10F6020000000000000039 /* AuthViewModel.swift */,
+				AA10F602000000000000003B /* OnboardingPermissionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000000D /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000000E /* ProductCardView.swift */,
+				AA10F602000000000000003A /* OTPFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000008 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F602000000000000000F /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AA10F6030000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000010 /* sample_products.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA10F603000000000000000A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F6020000000000000012 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CF10F6972F3FAA1A003F754C /* snappitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = snappitTests;
+			sourceTree = "<group>";
+		};
+		CF10F6A12F3FAA1A003F754C /* snappitUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = snappitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF10F6862F3FAA19003F754C /* snappit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF10F6A82F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappit" */;
+			buildPhases = (
+				CF10F6832F3FAA19003F754C /* Sources */,
+				CF10F6842F3FAA19003F754C /* Frameworks */,
+				CF10F6852F3FAA19003F754C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = snappit;
+			packageProductDependencies = (
+				BB10F6020000000000000001 /* Alamofire */,
+				BB10F6020000000000000002 /* KeychainAccess */,
+			);
+			productName = snappit;
+			productReference = CF10F6872F3FAA19003F754C /* snappit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF10F6932F3FAA1A003F754C /* snappitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF10F6AB2F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappitTests" */;
+			buildPhases = (
+				CF10F6902F3FAA1A003F754C /* Sources */,
+				CF10F6912F3FAA1A003F754C /* Frameworks */,
+				CF10F6922F3FAA1A003F754C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF10F6962F3FAA1A003F754C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CF10F6972F3FAA1A003F754C /* snappitTests */,
+			);
+			name = snappitTests;
+			packageProductDependencies = (
+			);
+			productName = snappitTests;
+			productReference = CF10F6942F3FAA1A003F754C /* snappitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF10F69D2F3FAA1A003F754C /* snappitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF10F6AE2F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappitUITests" */;
+			buildPhases = (
+				CF10F69A2F3FAA1A003F754C /* Sources */,
+				CF10F69B2F3FAA1A003F754C /* Frameworks */,
+				CF10F69C2F3FAA1A003F754C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF10F6A02F3FAA1A003F754C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CF10F6A12F3FAA1A003F754C /* snappitUITests */,
+			);
+			name = snappitUITests;
+			packageProductDependencies = (
+			);
+			productName = snappitUITests;
+			productReference = CF10F69E2F3FAA1A003F754C /* snappitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF10F67F2F3FAA19003F754C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					CF10F6862F3FAA19003F754C = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					CF10F6932F3FAA1A003F754C = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = CF10F6862F3FAA19003F754C;
+					};
+					CF10F69D2F3FAA1A003F754C = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = CF10F6862F3FAA19003F754C;
+					};
+				};
+			};
+			buildConfigurationList = CF10F6822F3FAA19003F754C /* Build configuration list for PBXProject "snappit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF10F67E2F3FAA19003F754C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BB10F6010000000000000001 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BB10F6010000000000000002 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CF10F6882F3FAA19003F754C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF10F6862F3FAA19003F754C /* snappit */,
+				CF10F6932F3FAA1A003F754C /* snappitTests */,
+				CF10F69D2F3FAA1A003F754C /* snappitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF10F6852F3FAA19003F754C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10F6010000000000000010 /* sample_products.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F6922F3FAA1A003F754C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F69C2F3FAA1A003F754C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF10F6832F3FAA19003F754C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10F6010000000000000001 /* snappitApp.swift in Sources */,
+				AA10F6010000000000000002 /* Product.swift in Sources */,
+				AA10F6010000000000000003 /* CartItem.swift in Sources */,
+				AA10F6010000000000000004 /* Widget.swift in Sources */,
+				AA10F6010000000000000005 /* MainTabView.swift in Sources */,
+				AA10F6010000000000000006 /* HomeView.swift in Sources */,
+				AA10F6010000000000000007 /* CategoriesView.swift in Sources */,
+				AA10F6010000000000000008 /* CartView.swift in Sources */,
+				AA10F6010000000000000009 /* OrdersView.swift in Sources */,
+				AA10F601000000000000000A /* ProfileView.swift in Sources */,
+				AA10F601000000000000000B /* HomeViewModel.swift in Sources */,
+				AA10F601000000000000000C /* CartViewModel.swift in Sources */,
+				AA10F601000000000000000D /* APIService.swift in Sources */,
+				AA10F601000000000000000E /* ProductCardView.swift in Sources */,
+				AA10F601000000000000000F /* Extensions.swift in Sources */,
+				AA10F6010000000000000020 /* Environment.swift in Sources */,
+				AA10F6010000000000000021 /* ServiceLocator.swift in Sources */,
+				AA10F6010000000000000022 /* KeyValueStore.swift in Sources */,
+				AA10F6010000000000000023 /* AppStore.swift in Sources */,
+				AA10F6010000000000000024 /* TokenStore.swift in Sources */,
+				AA10F6010000000000000025 /* HTTPClient.swift in Sources */,
+				AA10F6010000000000000026 /* AuthInterceptor.swift in Sources */,
+				AA10F6010000000000000027 /* ConnectivityInterceptor.swift in Sources */,
+				AA10F6010000000000000028 /* LoggingMonitor.swift in Sources */,
+				AA10F6010000000000000029 /* APIPaths.swift in Sources */,
+				AA10F601000000000000002A /* APIError.swift in Sources */,
+				AA10F601000000000000002B /* BaseRepository.swift in Sources */,
+				AA10F601000000000000002C /* Dependencies.swift in Sources */,
+				AA10F601000000000000002D /* AppRouter.swift in Sources */,
+				AA10F601000000000000002E /* SendOtpRequest.swift in Sources */,
+				AA10F601000000000000002F /* SendOtpResponse.swift in Sources */,
+				AA10F6010000000000000030 /* VerifyOtpRequest.swift in Sources */,
+				AA10F6010000000000000031 /* VerifyOtpResponse.swift in Sources */,
+				AA10F6010000000000000032 /* UserProfile.swift in Sources */,
+				AA10F6010000000000000033 /* UserCacheData.swift in Sources */,
+				AA10F6010000000000000034 /* OnboardingRepository.swift in Sources */,
+				AA10F6010000000000000035 /* SplashView.swift in Sources */,
+				AA10F6010000000000000036 /* SplashViewModel.swift in Sources */,
+				AA10F6010000000000000037 /* EnterNumberView.swift in Sources */,
+				AA10F6010000000000000038 /* EnterOtpView.swift in Sources */,
+				AA10F6010000000000000039 /* AuthViewModel.swift in Sources */,
+				AA10F601000000000000003A /* OTPFieldView.swift in Sources */,
+				AA10F601000000000000003B /* OnboardingPermissionViewModel.swift in Sources */,
+				AA10F601000000000000003C /* LocationPermissionView.swift in Sources */,
+				AA10F601000000000000003D /* NotificationPermissionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F6902F3FAA1A003F754C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10F69A2F3FAA1A003F754C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF10F6962F3FAA1A003F754C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF10F6862F3FAA19003F754C /* snappit */;
+			targetProxy = CF10F6952F3FAA1A003F754C /* PBXContainerItemProxy */;
+		};
+		CF10F6A02F3FAA1A003F754C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF10F6862F3FAA19003F754C /* snappit */;
+			targetProxy = CF10F69F2F3FAA1A003F754C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF10F6A62F3FAA1A003F754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF10F6A72F3FAA1A003F754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF10F6A92F3FAA1A003F754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Snappit needs your location to find stores near you and deliver to your doorstep.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF10F6AA2F3FAA1A003F754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Snappit needs your location to find stores near you and deliver to your doorstep.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF10F6AC2F3FAA1A003F754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snappit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snappit";
+			};
+			name = Debug;
+		};
+		CF10F6AD2F3FAA1A003F754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snappit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snappit";
+			};
+			name = Release;
+		};
+		CF10F6AF2F3FAA1A003F754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = snappit;
+			};
+			name = Debug;
+		};
+		CF10F6B02F3FAA1A003F754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9564MUTJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejashseth.snappitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = snappit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF10F6822F3FAA19003F754C /* Build configuration list for PBXProject "snappit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF10F6A62F3FAA1A003F754C /* Debug */,
+				CF10F6A72F3FAA1A003F754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF10F6A82F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF10F6A92F3FAA1A003F754C /* Debug */,
+				CF10F6AA2F3FAA1A003F754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF10F6AB2F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF10F6AC2F3FAA1A003F754C /* Debug */,
+				CF10F6AD2F3FAA1A003F754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF10F6AE2F3FAA1A003F754C /* Build configuration list for PBXNativeTarget "snappitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF10F6AF2F3FAA1A003F754C /* Debug */,
+				CF10F6B02F3FAA1A003F754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB10F6010000000000000001 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		BB10F6010000000000000002 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB10F6020000000000000001 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB10F6010000000000000001 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BB10F6020000000000000002 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB10F6010000000000000002 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF10F67F2F3FAA19003F754C /* Project object */;
+}
